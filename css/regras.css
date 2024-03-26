@@ -8,6 +8,7 @@
 
 .rules {
   width: 700px;
+  max-width: 100%;
   height: 100vh;
   background-color: #13161b;
   padding: 3rem;
@@ -63,11 +64,14 @@
   rotate: 180deg;
 }
 
-@media screen and (max-width: 1200px) {
-  .bodyRules {
-    grid-template-columns: 0 1fr 0;
-  }
-  .rules {
-    background-size: contain;
-  }
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6rem 2rem;
+}
+
+.text > h2 {
+  color: white;
+  font-weight: bolder;
 }
