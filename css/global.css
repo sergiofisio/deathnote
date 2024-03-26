@@ -19,7 +19,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: end;
-  padding: 1rem;
   position: relative;
 }
 
@@ -32,6 +31,7 @@ body {
   text-transform: uppercase;
   font-weight: bold;
   padding: 0.4rem;
+  margin-right: 1rem;
   border: 0.2rem solid black;
 }
 
