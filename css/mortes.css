@@ -1,0 +1,27 @@
+.mortes {
+  display: grid;
+  grid-template-columns: 10vw 80vw 10vw;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "nulo mortes1 nulo"
+    "mortes2 form mortes3"
+    "nulo mortes4 nulo";
+}
+
+.mortes1 {
+  grid-area: mortes1;
+}
+.mortes2 {
+  grid-area: mortes2;
+}
+.mortes3 {
+  grid-area: mortes3;
+}
+.mortes4 {
+  grid-area: mortes4;
+}
+
+form {
+  grid-area: form;
+  background-color: white;
+}
