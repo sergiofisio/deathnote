@@ -28,5 +28,5 @@ Para acessar ao design no figma siga os passos abaixo:
 ### Projeto desenvolvido por:
 
 <ul>
-<li>Sergio Bastos - <a href="https://github.com/sergiofisio" target="_blank">Github</a>, <a href="https://www.linkedin.com/in/sergio-bastos-jr/" target="_blank">Linkedin</a></li>
+    <li>Sergio Bastos - <a href="https://github.com/sergiofisio" target="_blank">Github</a>, <a href="https://www.linkedin.com/in/sergio-bastos-jr/" target="_blank">Linkedin</a></li>
 </ul>
