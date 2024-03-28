@@ -1,11 +1,30 @@
 .mortes {
+  width: 100%;
+  min-height: calc(100vh - 10rem);
   display: grid;
   grid-template-columns: 10vw 80vw 10vw;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr 1fr 0.2fr;
   grid-template-areas:
-    "nulo mortes1 nulo"
+    ". mortes1 ."
     "mortes2 form mortes3"
-    "nulo mortes4 nulo";
+    ". mortes4 .";
+}
+
+img {
+  opacity: 100%;
+  transition: all 1s ease-in-out;
+}
+
+.mortes > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.mortes2,
+.mortes3 {
+  flex-direction: column;
 }
 
 .mortes1 {
@@ -13,6 +32,7 @@
 }
 .mortes2 {
   grid-area: mortes2;
+  flex-direction: column;
 }
 .mortes3 {
   grid-area: mortes3;
@@ -21,7 +41,81 @@
   grid-area: mortes4;
 }
 
-form {
+.form {
+  margin: 1rem;
   grid-area: form;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
   background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 3rem;
+}
+
+form > h1 {
+  font-family: "Permanent Marker", cursive !important;
+  text-align: center;
+  width: 80%;
+}
+
+.input {
+  width: 80%;
+}
+
+.input,
+select,
+option,
+input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 2rem !important;
+  font-weight: bolder !important;
+}
+
+input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #000;
+  border-radius: 0.5rem;
+}
+
+.confirm,
+.clean {
+  color: white;
+}
+
+.confirm {
+  background-color: #0f1fb8;
+  border-color: #0f1fb8 !important;
+}
+
+.clean {
+  background-color: #b80f0f;
+  border-color: #b80f0f !important;
+}
+
+.confirm:hover,
+.clean:hover {
+  background-color: white;
+}
+
+.confirm:hover {
+  color: #0f1fb8 !important;
+}
+
+.clean:hover {
+  color: #b80f0f !important;
+}
+
+.death {
+  opacity: 0%;
 }
