@@ -13,6 +13,13 @@
   );
 }
 
+.bodyRules > a {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .mainRules {
   display: flex;
   align-items: center;
@@ -22,7 +29,7 @@
 .menuRules {
   display: flex;
   justify-content: center;
-  max-width: 30%;
+  min-width: 20%;
 }
 
 .menuRules > a {
@@ -34,10 +41,11 @@
 }
 
 .menuRules > a > img {
-  max-width: 100%;
+  width: 100%;
   border-radius: 100%;
   opacity: 30%;
   transition: all 0.5s ease-in-out;
+  box-shadow: 3px 3px 30px white;
 }
 
 .h2Menu {
@@ -66,8 +74,8 @@
 }
 
 .rules {
-  width: 700px;
-  max-width: 100%;
+  min-width: 40%;
+  max-width: 60%;
   min-height: calc(100vh - 10rem);
   background-color: #13161b;
   padding: 3rem;

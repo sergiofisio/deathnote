@@ -24,6 +24,7 @@ body {
   align-items: center;
   justify-content: space-between;
   position: relative;
+  animation: fadein 2s;
 }
 
 header {
@@ -79,15 +80,6 @@ header > button:hover {
   transform-origin: left;
 }
 
-@keyframes openBook {
-  0% {
-    transform: perspective(1000px) rotateY(0deg);
-  }
-  100% {
-    transform: perspective(1100px) rotateY(-120deg);
-  }
-}
-
 .openBook {
   animation: openBook 2s linear forwards;
   transform-origin: left;
@@ -107,5 +99,23 @@ button {
 @media screen and (max-width: 1000px) {
   .open {
     position: absolute;
+  }
+}
+
+@keyframes openBook {
+  0% {
+    transform: perspective(1000px) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(1100px) rotateY(-120deg);
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }

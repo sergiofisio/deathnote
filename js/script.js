@@ -5,3 +5,11 @@ document.querySelector(".open").addEventListener("click", function (event) {
     window.location.href = this.href;
   }, 2000);
 });
+
+window.addEventListener("load", function () {
+  document.body.classList.add("fadein");
+});
+
+window.addEventListener("beforeunload", function () {
+  document.body.classList.remove("fadein");
+});
