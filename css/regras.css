@@ -11,6 +11,7 @@
     #13161b 85%,
     black 100%
   );
+  position: relative;
 }
 
 .bodyRules > a,
@@ -164,6 +165,8 @@
 .write {
   position: absolute;
   bottom: 0;
+  width: fit-content !important;
+  height: fit-content !important;
 }
 
 .write > button {
