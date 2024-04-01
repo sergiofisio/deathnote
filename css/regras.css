@@ -110,24 +110,24 @@
 }
 
 .cantoTopLeft {
-  top: 3.5rem;
+  top: 8rem;
   left: 3.5rem;
 }
 
 .cantoTopRight {
-  top: 3.5rem;
+  top: 8rem;
   right: 3.5rem;
   rotate: 90deg;
 }
 
 .cantoBottomLeft {
-  bottom: 3.5rem;
+  bottom: 8rem;
   left: 3.5rem;
   rotate: 270deg;
 }
 
 .cantoBottomRight {
-  bottom: 3.5rem;
+  bottom: 8rem;
   right: 3.5rem;
   rotate: 180deg;
 }

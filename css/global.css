@@ -1,8 +1,5 @@
 @import "./regras.css";
 @import "./mortes.css";
-@import "./informacoes.css";
-@import "./media.css";
-@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
 
 @font-face {
   font-family: "deathNote";
@@ -14,6 +11,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "deathNote", sans-serif !important;
+  text-decoration: none !important;
 }
 
 a {
@@ -29,31 +27,6 @@ body {
   align-items: center;
   justify-content: space-between;
   position: relative;
-  animation: fadein 2s;
-  overflow: hidden;
-}
-
-header {
-  display: flex;
-  justify-content: start;
-  min-width: 100%;
-  height: 5rem;
-  background-image: url("../img/logoBranco.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 30%;
-  display: flex;
-  align-items: center;
-  padding: 2rem;
-}
-
-header > button {
-  background-color: black;
-}
-
-header > button:hover {
-  background-color: white;
-  color: black !important;
 }
 
 .open {
@@ -84,22 +57,6 @@ header > button:hover {
 .openBook {
   animation: openBook 2s linear forwards;
   transform-origin: left;
-}
-
-.openBook {
-  animation: openBook 2s linear forwards;
-  transform-origin: left;
-}
-
-button {
-  width: 12rem;
-  height: 3rem;
-  border-radius: 10rem !important;
-  cursor: pointer;
-  font-size: 2rem !important;
-  font-weight: bolder !important;
-  border: 0.1rem solid !important;
-  transition: all 0.2s ease-in-out;
 }
 
 @keyframes openBook {

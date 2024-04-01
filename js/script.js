@@ -5,3 +5,11 @@ window.addEventListener("load", function () {
 window.addEventListener("beforeunload", function () {
   document.body.classList.remove("fadein");
 });
+
+window.addEventListener("load", function () {
+  document.body.classList.add("fadein");
+});
+
+window.addEventListener("beforeunload", function () {
+  document.body.classList.remove("fadein");
+});
