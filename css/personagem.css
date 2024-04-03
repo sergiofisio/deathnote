@@ -1,0 +1,39 @@
+.personagens {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.charimg {
+    display: flex;
+    gap: 1rem;
+    font-size: 2rem;
+    height: calc(100vh - 10rem);
+}
+
+table {
+    border-collapse: separate;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+/* Estilos específicos para a imagem */
+.img3 {
+    height: 80%;
+}
+
+/* Estilos específicos para os títulos */
+.name, .age {
+    font-size: 1.5rem;
+}
