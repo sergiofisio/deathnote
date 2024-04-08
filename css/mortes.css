@@ -10,11 +10,6 @@
     ". mortes4 .";
 }
 
-img {
-  opacity: 100%;
-  transition: all 1s ease-in-out;
-}
-
 .mortes > div {
   display: flex;
   align-items: center;
@@ -25,6 +20,9 @@ img {
 .imgMortes > img {
   max-width: 100%;
   max-height: 100%;
+  border-radius: 100%;
+  opacity: 100%;
+  transition: all 1s ease-in-out;
 }
 
 .mortes2,
@@ -124,4 +122,33 @@ input {
 
 .death {
   opacity: 0%;
+}
+
+@media screen and (max-width: 800px) {
+  .mortes {
+    grid-template-columns: 20vw 20vw 20vw 20vw;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+      "mortes1 mortes2 mortes3 mortes4"
+      "form form form form";
+    gap: 0 1rem;
+    justify-content: center;
+  }
+  .imgMortes {
+    width: 100%;
+  }
+  .mortes1,
+  .mortes4 {
+    flex-direction: column;
+    height: 100%;
+  }
+  .imgMortes > img {
+    max-width: 100%;
+  }
+  .btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+  }
 }

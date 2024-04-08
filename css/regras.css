@@ -103,7 +103,8 @@
 }
 
 .topo {
-  top: -2rem;
+  top: 0;
+  width: 15%;
 }
 
 .bottom {
@@ -143,6 +144,14 @@
   letter-spacing: 0.2rem;
 }
 
+ul {
+  width: 100%;
+}
+
+li {
+  font-size: 1.5rem;
+}
+
 .text > h2 {
   display: flex;
   flex-direction: column;
@@ -178,4 +187,48 @@
 .write > button:hover {
   background-color: #13161b;
   color: white !important;
+}
+
+@media screen and (max-width: 1050px) {
+  li {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .bodyRules {
+    position: relative;
+    width: 100vw;
+  }
+
+  .rules {
+    min-width: 100%;
+  }
+
+  .menuRules {
+    position: absolute;
+    top: 50%;
+  }
+
+  .menuRules > a > img {
+    width: 30%;
+    opacity: 100%;
+  }
+
+  .chartersMenu {
+    left: 0;
+    z-index: 10;
+  }
+
+  .chartersMenu > a {
+    justify-content: flex-start;
+  }
+
+  .shinigamiMenu {
+    right: 0;
+  }
+
+  .shinigamiMenu > a {
+    justify-content: flex-end;
+  }
 }
