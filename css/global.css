@@ -120,6 +120,9 @@ button {
 }
 
 @media screen and (max-width: 800px) {
+  body {
+    max-height: 80vh;
+  }
   header {
     background-size: 100%;
   }
