@@ -131,6 +131,26 @@ input {
 }
 
 @media screen and (max-width: 800px) {
+  form {
+    height: 40vh;
+  }
+
+  form > h1 {
+    font-size: 1rem;
+  }
+
+  .input,
+  select,
+  option,
+  input {
+    font-size: 1rem !important;
+  }
+
+  select,
+  input {
+    height: 2.5rem;
+  }
+
   .mortes {
     grid-template-columns: 20vw 20vw 20vw 20vw;
     grid-template-rows: 1fr;
