@@ -32,11 +32,15 @@ body {
   overflow: hidden;
 }
 
+.header {
+  min-height: 15vh;
+}
+
 header {
   display: flex;
   justify-content: start;
   min-width: 100%;
-  min-height: 15vh;
+  height: 15vh;
   background-image: url("../img/logoBranco.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -120,6 +124,10 @@ button {
 }
 
 @media screen and (max-width: 800px) {
+  body {
+    overflow: auto;
+  }
+
   header {
     background-size: 100%;
   }

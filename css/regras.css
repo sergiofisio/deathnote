@@ -251,7 +251,6 @@ li {
   .bodyRules {
     position: relative;
     width: 100vw;
-    min-height: 85vh;
   }
 
   .rules {
