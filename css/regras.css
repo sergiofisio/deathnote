@@ -164,11 +164,37 @@ li {
   position: relative;
 }
 
-.erros > h2 {
+.agudo,
+.til1,
+.til2,
+.til3 {
   position: absolute;
-  top: -5px;
-  left: 100px;
+  top: -1px;
+  font-size: 1rem;
+}
+
+.agudo {
+  left: 145px;
   rotate: 50deg;
+}
+
+.til1 {
+  left: 217px;
+}
+
+.til2 {
+  right: 175px;
+}
+
+.til3 {
+  left: 80px;
+}
+
+.cidilha {
+  position: absolute;
+  left: 65px;
+  top: 20px;
+  font-size: 1.2rem;
 }
 
 .write {
@@ -191,6 +217,32 @@ li {
 
 @media screen and (max-width: 1050px) {
   li {
+    font-size: 1rem;
+  }
+  .agudo {
+    top: -3px;
+    left: 110px;
+    font-size: 1rem;
+  }
+  .til1 {
+    top: -3px;
+    left: 165px;
+  }
+
+  .til2 {
+    top: -3px;
+    left: 238px;
+  }
+
+  .til3 {
+    top: -3px;
+    left: 60px;
+  }
+
+  .cidilha {
+    position: absolute;
+    left: 50px;
+    top: 14px;
     font-size: 1rem;
   }
 }
