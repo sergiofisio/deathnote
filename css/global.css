@@ -36,7 +36,7 @@ header {
   display: flex;
   justify-content: start;
   min-width: 100%;
-  height: 15vh;
+  min-height: 15vh;
   background-image: url("../img/logoBranco.png");
   background-position: center;
   background-repeat: no-repeat;
