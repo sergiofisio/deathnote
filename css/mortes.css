@@ -99,6 +99,10 @@ input {
   color: white;
 }
 
+.btn {
+  padding: 0 !important;
+}
+
 .confirm {
   background-color: #0f1fb8;
   border-color: #0f1fb8 !important;
@@ -111,7 +115,7 @@ input {
 
 .confirm:hover,
 .clean:hover {
-  background-color: white;
+  background-color: white !important;
 }
 
 .confirm:hover {
